@@ -1182,7 +1182,8 @@ textarea.w-select {
 
 .w-widget-twitter-count-shim:not(.w--vertical):before {
   border-width: 4px;
-  border-color: rgba(117, 134, 150, 0) #5d6c7b rgba(117, 134, 150, 0) rgba(117, 134, 150, 0);
+  border-color: rgba(117, 134, 150, 0) #5d6c7b rgba(117, 134, 150, 0)
+    rgba(117, 134, 150, 0);
   margin-top: -4px;
   margin-left: -9px;
 }
@@ -1195,7 +1196,8 @@ textarea.w-select {
 
 .w-widget-twitter-count-shim:not(.w--vertical):after {
   border-width: 4px;
-  border-color: rgba(255, 255, 255, 0) #fff rgba(255, 255, 255, 0) rgba(255, 255, 255, 0);
+  border-color: rgba(255, 255, 255, 0) #fff rgba(255, 255, 255, 0)
+    rgba(255, 255, 255, 0);
   margin-top: -4px;
   margin-left: -8px;
 }
@@ -3681,12 +3683,23 @@ figure {
   padding-bottom: 80px;
 }
 
-.footer-logo{
+.footer-logo {
   height: 100px;
-  width: 200px;
+  width: 260px;
   object-fit: cover;
 }
-
+.navbar-container .left-navbar img {
+  height: 130px;
+  width: 260px;
+  object-fit: cover;
+}
+@media (max-width: 500px) {
+  .navbar-container .left-navbar img {
+    height: 100px;
+    width: 260px;
+    object-fit: cover;
+  }
+}
 .section.newsletter {
   background-color: var(--green);
   color: #fff;
@@ -3827,7 +3840,8 @@ figure {
 
 .hero-block {
   color: #fff;
-  background-image: linear-gradient(to top, #1c3533, rgba(28, 53, 51, 0)), linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(to top, #1c3533, rgba(28, 53, 51, 0)),
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../63bc1e3983475dfe684fd9ab_Hero%20Image.webp");
   background-position: 0 0, 0 0, 50%;
   background-repeat: repeat, repeat, no-repeat;
@@ -4697,7 +4711,11 @@ figure {
 
 .marquee-overflow {
   z-index: 9;
-  background-image: linear-gradient(to bottom, var(--green), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    to bottom,
+    var(--green),
+    rgba(255, 255, 255, 0)
+  );
   height: 278px;
   position: absolute;
   top: 0%;
@@ -4707,7 +4725,11 @@ figure {
 }
 
 .marquee-overflow.bottom {
-  background-image: linear-gradient(to top, var(--green), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    to top,
+    var(--green),
+    rgba(255, 255, 255, 0)
+  );
   top: auto;
   bottom: 0%;
   left: 0%;
@@ -5185,7 +5207,11 @@ figure {
 
 .slider-gradient {
   z-index: 9;
-  background-image: linear-gradient(270deg, var(--beige-background), rgba(255, 255, 255, 0));
+  background-image: linear-gradient(
+    270deg,
+    var(--beige-background),
+    rgba(255, 255, 255, 0)
+  );
   width: 12%;
   position: absolute;
   top: 0%;
@@ -5481,7 +5507,14 @@ figure {
   grid-template-rows: auto;
   grid-template-columns: 1fr 1fr 1fr;
 }
-
+@media (width: 1024px) {
+  .grid-footer {
+    grid-column-gap: 40px;
+    grid-row-gap: 72px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 .footer-main {
   grid-column-gap: 16px;
   grid-row-gap: 16px;
@@ -5521,6 +5554,7 @@ figure {
   font-weight: 500;
   line-height: 200%;
   text-decoration: none;
+  white-space: nowrap;
 }
 
 .footer-contact {
@@ -5776,7 +5810,13 @@ figure {
 
 .overlay-course-detail-hero {
   background-color: rgba(28, 53, 51, 0.4);
-  background-image: linear-gradient(to bottom, rgba(28, 53, 51, 0.4), rgba(28, 53, 51, 0.9) 32%, rgba(28, 53, 51, 0.98) 74%, var(--green));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(28, 53, 51, 0.4),
+    rgba(28, 53, 51, 0.9) 32%,
+    rgba(28, 53, 51, 0.98) 74%,
+    var(--green)
+  );
   position: absolute;
   top: 0%;
   bottom: 0%;
@@ -5795,7 +5835,7 @@ figure {
 }
 
 .background-image-about-us {
-  background-image: url("../63bd575ee04b235d8b0078ae_AboutUs%20Big.webp");
+  background-image: url("../about-genzskills.png");
   background-position: 50%;
   background-size: cover;
   border-radius: 16px;
@@ -6949,7 +6989,8 @@ figure {
 
   .hero-block {
     text-align: center;
-    background-image: linear-gradient(to top, #1c3533, rgba(28, 53, 51, 0)), linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
+    background-image: linear-gradient(to top, #1c3533, rgba(28, 53, 51, 0)),
+      linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0)),
       url("../63bc1e3983475dfe684fd9ab_Hero%20Image.webp");
     background-position: 0 0, 0 0, 65% 0;
     padding: 64px 24px 56px;
@@ -7251,7 +7292,8 @@ figure {
   }
 
   .hero-block {
-    background-image: linear-gradient(to top, #1c3533, rgba(28, 53, 51, 0)), linear-gradient(rgba(28, 53, 51, 0.2), rgba(28, 53, 51, 0.2)),
+    background-image: linear-gradient(to top, #1c3533, rgba(28, 53, 51, 0)),
+      linear-gradient(rgba(28, 53, 51, 0.2), rgba(28, 53, 51, 0.2)),
       url("../63bc1e3983475dfe684fd9ab_Hero%20Image.webp");
     background-position: 0 0, 0 0, 65% 0;
     background-repeat: repeat, repeat, no-repeat;
@@ -7658,7 +7700,7 @@ figure {
 }
 .col-box img {
   width: 100%;
-  height: 350px; 
+  height: 350px;
   object-fit: cover;
   border-radius: 8px;
 }
@@ -7668,6 +7710,129 @@ figure {
   line-height: 1.5;
 }
 
+.font-weight-none {
+  font-weight: 400 !important;
+}
+
+.contact-link {
+  color: #000;
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* pricing details styles*/
+
+.pricing-section {
+  text-align: center;
+  padding: 120px 20px;
+  background: #f4f1eb;
+  font-family: "Poppins", sans-serif;
+}
+
+.pricing-title {
+  margin-top: 16px;
+  margin-bottom: 10px;
+  font-family: Plus Jakarta, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.pricing-subtitle {
+  font-size: 22px;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+.pricing-description{
+  max-width: 700px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 140%;
+  margin-bottom: 40px;
+}
+.card-subtitle{
+    font-size: 15px;
+  line-height: 140%;
+  margin-bottom: 10px;
+}
+
+.pricing-container {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 20px 20px;
+  width: 350px;
+  text-align: center;
+  transition: 0.3s ease;
+  border: 1px solid #e6e6e6;
+}
+
+.pricing-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-card.active {
+  border: 2px solid #1c3533;
+  transform: scale(1.05);
+}
+
+.pricing-card h3 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+.price {
+  font-size: 22px;
+  font-weight: bold;
+  margin: 10px 0 20px;
+}
+
+.price span {
+  font-size: 16px;
+  color: #555;
+}
+
+
+.pricing-card ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 25px;
+}
+
+.pricing-card ul li {
+  margin: 8px 0;
+  color: #444;
+  font-size: 15px;
+}
+
+.pricing-btn {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 50px;
+  background: #1c3533;
+  color: #fff;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.testimonial-avatar img{
+  height:100px;
+  width: 100px;
+  object-fit: cover;
+}
 
 #w-node-c92ba1be-d3be-0d69-1295-2230ba8e196b-c24fd956,
 #w-node-d8a2a5c8-672a-4c91-227f-777a18b7f0b8-c24fd956 {
@@ -8149,168 +8314,192 @@ figure {
 
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475db80c4fd9aa_PlusJakartaSans-BoldItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475db80c4fd9aa_PlusJakartaSans-BoldItalic.otf")
+    format("opentype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475d423b4fd97d_PlusJakartaSans-ExtraBoldItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d423b4fd97d_PlusJakartaSans-ExtraBoldItalic.otf")
+    format("opentype");
   font-weight: 800;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475dd7f74fd9a8_PlusJakartaSans-ExtraLight.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475dd7f74fd9a8_PlusJakartaSans-ExtraLight.otf")
+    format("opentype");
   font-weight: 200;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475d18614fd9a7_PlusJakartaSans-Bold.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d18614fd9a7_PlusJakartaSans-Bold.otf")
+    format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475d0ec64fd9a9_PlusJakartaSans-ExtraBold.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d0ec64fd9a9_PlusJakartaSans-ExtraBold.otf")
+    format("opentype");
   font-weight: 800;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475d03a54fd990_PlusJakartaSans-Light.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d03a54fd990_PlusJakartaSans-Light.otf")
+    format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475d9b984fd98a_PlusJakartaSans-Italic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d9b984fd98a_PlusJakartaSans-Italic.otf")
+    format("opentype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475d5b874fd984_PlusJakartaSans-LightItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d5b874fd984_PlusJakartaSans-LightItalic.otf")
+    format("opentype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475dfa394fd9a5_PlusJakartaSans-MediumItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475dfa394fd9a5_PlusJakartaSans-MediumItalic.otf")
+    format("opentype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475d24df4fd97b_PlusJakartaSans-Medium.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d24df4fd97b_PlusJakartaSans-Medium.otf")
+    format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475dd8444fd9a3_PlusJakartaSans-Regular.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475dd8444fd9a3_PlusJakartaSans-Regular.otf")
+    format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475de7894fd98c_PlusJakartaSans-SemiBold.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475de7894fd98c_PlusJakartaSans-SemiBold.otf")
+    format("opentype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475df1c64fd98b_PlusJakartaSans-SemiBoldItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475df1c64fd98b_PlusJakartaSans-SemiBoldItalic.otf")
+    format("opentype");
   font-weight: 600;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Plus Jakarta";
-  src: url("../../../assets/fonts/63bc1e3983475daa2c4fd986_PlusJakartaSans-ExtraLightItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475daa2c4fd986_PlusJakartaSans-ExtraLightItalic.otf")
+    format("opentype");
   font-weight: 200;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475d49a04fd97a_Satoshi-Black.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d49a04fd97a_Satoshi-Black.otf")
+    format("opentype");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475d36b34fd97e_Satoshi-BlackItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d36b34fd97e_Satoshi-BlackItalic.otf")
+    format("opentype");
   font-weight: 900;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475de61f4fd982_Satoshi-Bold.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475de61f4fd982_Satoshi-Bold.otf")
+    format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475d0a114fd979_Satoshi-Light.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d0a114fd979_Satoshi-Light.otf")
+    format("opentype");
   font-weight: 300;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475dd80c4fd98e_Satoshi-MediumItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475dd80c4fd98e_Satoshi-MediumItalic.otf")
+    format("opentype");
   font-weight: 500;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475dc34c4fd9a6_Satoshi-BoldItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475dc34c4fd9a6_Satoshi-BoldItalic.otf")
+    format("opentype");
   font-weight: 700;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475dc54f4fd987_Satoshi-LightItalic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475dc54f4fd987_Satoshi-LightItalic.otf")
+    format("opentype");
   font-weight: 300;
   font-style: italic;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475d621e4fd97c_Satoshi-Regular.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d621e4fd97c_Satoshi-Regular.otf")
+    format("opentype");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475d43a74fd9a4_Satoshi-Medium.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d43a74fd9a4_Satoshi-Medium.otf")
+    format("opentype");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Satoshi";
-  src: url("../../../assets/fonts/63bc1e3983475d6c084fd98d_Satoshi-Italic.otf") format("opentype");
+  src: url("../../../assets/fonts/63bc1e3983475d6c084fd98d_Satoshi-Italic.otf")
+    format("opentype");
   font-weight: 400;
   font-style: italic;
   font-display: swap;
