@@ -1,0 +1,1544 @@
+<!DOCTYPE html>
+<html data-wf-domain="" data-wf-page="subscription-register" data-wf-site="63bc1e3983475d58fd4fd957" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Complete Registration | GenZSkillz</title>
+  <meta content="Complete your registration and start your learning journey" name="description">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+
+  <link href="/web-assets/scripts-and-styles/css/styles.css" rel="stylesheet" type="text/css">
+  <link href="/web-assets/scripts-and-styles/favicon-genzskillz.jpg" rel="shortcut icon" type="image/x-icon">
+  <link href="/web-assets/scripts-and-styles/favicon-genzskillz.jpg" rel="apple-touch-icon">
+
+  <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
+
+  <style>
+    .section.contact {
+      padding: 80px 0;
+    }
+
+    .main-container.w-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .title-wrap-center {
+      max-width: 100%;
+      opacity: 1 !important;
+    }
+
+    .grid-halves.contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: start;
+    }
+
+    .contact-form {
+      background: white;
+    }
+
+    .plan-summary-banner {
+      background: linear-gradient(135deg, #DBEAFE 0%, #BFDBFE 100%);
+      border-left: 4px solid #1338be;
+      padding: 24px 28px;
+      border-radius: 12px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 8px rgba(19, 56, 190, 0.1);
+    }
+
+    .plan-summary-info h3 {
+      margin: 0 0 6px 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #1E3A8A;
+    }
+
+    .plan-summary-info p {
+      margin: 0;
+      font-size: 0.95rem;
+      color: #1E40AF;
+      font-weight: 500;
+    }
+
+    .change-plan-link {
+      color: #1338be;
+      font-size: 0.875rem;
+      font-weight: 700;
+      text-decoration: none;
+      cursor: pointer;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .change-plan-link:hover {
+      background: rgba(19, 56, 190, 0.1);
+      text-decoration: none;
+    }
+
+    .form-section {
+      margin-bottom: 36px;
+    }
+
+    .form-section-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+      color: #1F2937;
+      padding-bottom: 10px;
+      border-bottom: 2px solid #E5E7EB;
+    }
+
+    .text-field.w-input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid #E5E7EB;
+      border-radius: 10px;
+      font-size: 0.95rem;
+      margin-bottom: 16px;
+      transition: all 0.3s;
+    }
+
+    .text-field.w-input:focus {
+      border-color: #1338be;
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(19, 56, 190, 0.1);
+    }
+
+    .text-field.w-input::placeholder {
+      color: #9CA3AF;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-row .text-field.w-input {
+      margin-bottom: 0;
+    }
+
+    .password-field-wrap {
+      position: relative;
+      margin-bottom: 16px;
+    }
+
+    .password-field-wrap .text-field.w-input {
+      margin-bottom: 0;
+      padding-right: 70px;
+    }
+
+    .password-toggle-btn {
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      transform: translateY(-50%);
+      background: none;
+      border: none;
+      color: #6B7280;
+      font-size: 0.875rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 6px 12px;
+      border-radius: 6px;
+      transition: all 0.3s;
+    }
+
+    .password-toggle-btn:hover {
+      color: #1338be;
+      background: #F3F4F6;
+    }
+
+    .board-info-display {
+      background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+      border: 2px solid #93C5FD;
+      border-radius: 10px;
+      padding: 18px;
+      margin-bottom: 16px;
+    }
+
+    .board-info-display p {
+      margin: 0 0 10px 0;
+      font-size: 0.875rem;
+      color: #1E40AF;
+      line-height: 1.6;
+    }
+
+    .board-info-display p:last-child {
+      margin-bottom: 0;
+    }
+
+    select.text-field.w-input {
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%236B7280' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 16px center;
+      padding-right: 44px;
+      cursor: pointer;
+    }
+
+    .coupon-section-box {
+      background: #F9FAFB;
+      padding: 20px;
+      border-radius: 10px;
+      margin-top: 8px;
+      border: 1px solid #E5E7EB;
+    }
+
+    .coupon-input-wrapper {
+      display: flex;
+      gap: 12px;
+    }
+
+    .coupon-input-wrapper .text-field {
+      flex: 1;
+      margin: 0;
+    }
+
+    .coupon-apply-btn {
+      background: linear-gradient(135deg, #1338be 0%, #0f2d99 100%);
+      color: white;
+      border: none;
+      padding: 14px 28px;
+      border-radius: 10px;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      white-space: nowrap;
+      font-size: 0.95rem;
+    }
+
+    .coupon-apply-btn:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(19, 56, 190, 0.3);
+    }
+
+    .coupon-apply-btn:disabled {
+      background: #D1D5DB;
+      cursor: not-allowed;
+    }
+
+    .coupon-success-box {
+      background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);
+      border: 2px solid #10B981;
+      padding: 18px;
+      border-radius: 10px;
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .coupon-success-info p {
+      margin: 0 0 4px 0;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #065F46;
+    }
+
+    .coupon-success-info small {
+      font-size: 0.8rem;
+      color: #047857;
+      font-weight: 500;
+    }
+
+    .remove-coupon-link {
+      color: #DC2626;
+      font-size: 0.875rem;
+      font-weight: 700;
+      cursor: pointer;
+      background: none;
+      border: none;
+      padding: 8px 16px;
+      border-radius: 8px;
+      transition: all 0.3s;
+    }
+
+    .remove-coupon-link:hover {
+      background: rgba(220, 38, 38, 0.1);
+    }
+
+    .terms-checkbox-wrap {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-top: 24px;
+      padding: 16px;
+      background: #F9FAFB;
+      border-radius: 10px;
+      border: 1px solid #E5E7EB;
+    }
+
+    .terms-checkbox-wrap input[type="checkbox"] {
+      margin-top: 3px;
+      width: 18px;
+      height: 18px;
+      cursor: pointer;
+      accent-color: #1338be;
+    }
+
+    .terms-checkbox-wrap label {
+      font-size: 0.875rem;
+      color: #4B5563;
+      cursor: pointer;
+      line-height: 1.6;
+    }
+
+    .terms-checkbox-wrap label a {
+      color: #1338be;
+      font-weight: 600;
+    }
+
+    .form-buttons-wrap {
+      display: flex;
+      gap: 16px;
+      margin-top: 32px;
+    }
+
+    .back-btn {
+      background: white;
+      color: #374151;
+      border: 2px solid #D1D5DB;
+      padding: 14px;
+      width: 52px;
+      height: 52px;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .back-btn:hover {
+      background: #F9FAFB;
+      border-color: #9CA3AF;
+      transform: translateX(-4px);
+    }
+
+    .submit-btn-wrapper {
+      flex: 1;
+    }
+
+    .price-display {
+      text-align: center;
+      margin-bottom: 12px;
+    }
+
+    .original-price-text {
+      font-size: 0.95rem;
+      color: #6B7280;
+      text-decoration: line-through;
+      margin-right: 8px;
+    }
+
+    .final-price-text {
+      font-size: 1.75rem;
+      font-weight: 800;
+      color: #10B981;
+    }
+
+    .cta.secondary.w-button {
+      width: 100%;
+      padding: 16px 24px;
+      background: linear-gradient(135deg, #1338be 0%, #0f2d99 100%);
+      color: white;
+      border: none;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .cta.secondary.w-button:hover:not(:disabled) {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 16px rgba(19, 56, 190, 0.3);
+    }
+
+    .cta.secondary.w-button:disabled {
+      background: #D1D5DB;
+      cursor: not-allowed;
+    }
+
+    .payment-security-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.8rem;
+      color: #6B7280;
+      margin-top: 12px;
+    }
+
+    .contact-card-wrap {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 2px solid #E5E7EB;
+      border-radius: 16px;
+      padding: 28px;
+      transition: all 0.3s;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .contact-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(19, 56, 190, 0.1);
+      border-color: #1338be;
+    }
+
+    .contact-card-icon {
+      width: 56px;
+      height: 56px;
+      background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .contact-card-icon img {
+      width: 28px;
+      height: 28px;
+      filter: brightness(0) saturate(100%) invert(21%) sepia(100%) saturate(2476%) hue-rotate(219deg) brightness(91%) contrast(106%);
+    }
+
+    .contact-title {
+      font-size: 1.125rem;
+      font-weight: 700;
+      color: #1F2937;
+      margin-bottom: 12px;
+    }
+
+    .paragraph-small {
+      font-size: 0.875rem;
+      color: #6B7280;
+      line-height: 1.7;
+      margin: 0;
+    }
+
+    .success-container {
+      text-align: center;
+      padding: 80px 40px;
+    }
+
+    .success-checkmark {
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(135deg, #D1FAE5 0%, #A7F3D0 100%);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+    }
+
+    .success-checkmark svg {
+      width: 40px;
+      height: 40px;
+      color: #10B981;
+    }
+
+    .loading-spinner-inline {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #1338be;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      animation: spin 1s linear infinite;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 8px;
+    }
+
+    @keyframes spin {
+      0% {
+        transform: rotate(0deg);
+      }
+
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .info-note-yellow {
+      background: linear-gradient(135deg, #FEF3C7 0%, #FDE68A 100%);
+      border-left: 4px solid #F59E0B;
+      padding: 14px 16px;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      color: #92400E;
+      margin-top: 16px;
+      line-height: 1.6;
+    }
+
+    .toast-container {
+      position: fixed;
+      top: 20px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .toast {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+      padding: 18px 22px;
+      min-width: 320px;
+      max-width: 420px;
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      animation: slideInRight 0.3s ease-out;
+      border-left: 4px solid #10B981;
+    }
+
+    .toast.error {
+      border-left-color: #DC2626;
+    }
+
+    .toast.warning {
+      border-left-color: #F59E0B;
+    }
+
+    .toast-icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+    }
+
+    .toast-content {
+      flex: 1;
+    }
+
+    .toast-title {
+      font-weight: 700;
+      font-size: 0.95rem;
+      margin-bottom: 4px;
+      color: #111827;
+    }
+
+    .toast-message {
+      font-size: 0.875rem;
+      color: #6B7280;
+      line-height: 1.5;
+    }
+
+    .toast-close {
+      background: none;
+      border: none;
+      color: #9CA3AF;
+      cursor: pointer;
+      padding: 0;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 4px;
+      transition: all 0.3s;
+    }
+
+    .toast-close:hover {
+      color: #6B7280;
+      background: #F3F4F6;
+    }
+
+    @keyframes slideInRight {
+      from {
+        transform: translateX(400px);
+        opacity: 0;
+      }
+
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideOutRight {
+      from {
+        transform: translateX(0);
+        opacity: 1;
+      }
+
+      to {
+        transform: translateX(400px);
+        opacity: 0;
+      }
+    }
+
+    .toast.hiding {
+      animation: slideOutRight 0.3s ease-out forwards;
+    }
+
+    @media (max-width: 991px) {
+      .grid-halves.contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .contact-card-wrap {
+        order: -1;
+      }
+    }
+
+    @media (max-width: 767px) {
+      .section.contact {
+        padding: 40px 0;
+      }
+
+      .form-row {
+        grid-template-columns: 1fr;
+      }
+
+      .form-row .text-field.w-input {
+        margin-bottom: 16px;
+      }
+
+      .coupon-input-wrapper {
+        flex-direction: column;
+      }
+
+      .coupon-apply-btn {
+        width: 100%;
+      }
+
+      .toast-container {
+        right: 10px;
+        left: 10px;
+      }
+
+      .toast {
+        min-width: auto;
+      }
+
+      .plan-summary-banner {
+        flex-direction: column;
+        gap: 16px;
+        text-align: center;
+      }
+
+      .form-buttons-wrap {
+        gap: 12px;
+      }
+
+      .back-btn {
+        width: 48px;
+        height: 48px;
+      }
+    }
+
+    @media (max-width: 479px) {
+      .contact-card {
+        padding: 20px;
+      }
+
+      .contact-title {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease"
+    role="banner" class="navbar w-nav">
+    <div class="navbar-container">
+      <div class="left-navbar"><a href="/" class="brand-link-navbar w-nav-brand"><img
+            src="/web-assets/scripts-and-styles/genskillz-logo.png" loading="lazy" alt=""
+            class="brand-image-navbar"></a></div>
+      <div class="right-navbar">
+        <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" class="link-nav w-nav-link">Home</a>
+          <a href="/about-us.html" aria-current="page" class="link-nav w-nav-link w--current">About Us</a>
+          <a href="/features.html" class="link-nav w-nav-link">Features</a>
+          <!-- <a href="/teachers.html"
+            class="link-nav w-nav-link">Teachers</a> -->
+          <!-- <a href="/pricing.html" class="link-nav w-nav-link">Pricing</a> -->
+          <!-- <a href="/blogs.html" class="link-nav w-nav-link">Blogs</a> -->
+          <a href="/contact-us.html" class="link-nav w-nav-link">Contact Us</a>
+          <div class="divider-nav"></div>
+          <div class="wrap-nav-buttons"><a href="https://app.genzskillz.in/login" class="link-login w-inline-block"><img
+                src="/web-assets/scripts-and-styles/63bc1e3983475d1f854fd9b0_Group%20Icon.svg" loading="lazy" alt=""
+                class="icon-login">
+              <div style="white-space: nowrap;">Log in</div>
+            </a><a href="/pricing.html" target="_blank" class="cta secondary nav-cta w-button">Subscribe Now</a>
+          </div>
+        </nav>
+        <div class="manu-button w-nav-button">
+          <div class="wrap-menu-inside"><img src="/web-assets/scripts-and-styles/63beba6c54f081bd392dda9c_menu.svg"
+              loading="lazy" alt="" class="icon-hamburger"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="section contact">
+    <div class="main-container w-container">
+      <div id="registrationSection">
+        <div class="title-wrap-center" style="margin-bottom: 40px; text-align: center;">
+          <h1 style="font-size: 2.25rem; font-weight: 800; margin-bottom: 16px; color: #1F2937;">Complete Your
+            Registration</h1>
+          <p class="text-medium" style="color: #6B7280; max-width: 600px; margin: 0 auto;">Fill in your details to
+            create your account and start your learning journey with GenZSkillz</p>
+        </div>
+
+        <div id="planSummaryBanner" class="plan-summary-banner"></div>
+
+        <div class="w-layout-grid grid-halves contact-grid">
+          <div id="w-node-_943094c2-6572-8746-0c54-108ab1ffdc84-544fd961" class="contact-form">
+            <h2 style="font-size: 1.75rem; font-weight: 700; margin-bottom: 24px; color: #1F2937;">Registration Details
+            </h2>
+
+            <div class="w-form">
+              <form id="registrationForm" class="form">
+                <div class="form-section">
+                  <h3 class="form-section-title">Personal Information</h3>
+
+                  <input class="text-field w-input" type="text" id="name" name="name" placeholder="Full Name *"
+                    required>
+
+                  <input class="text-field w-input" type="email" id="email" name="email" placeholder="Email Address *"
+                    required>
+
+                  <input class="text-field w-input" type="tel" id="phone" name="phone"
+                    placeholder="Phone Number (10 digits) *" pattern="[0-9]{10}" required>
+                </div>
+
+                <div class="form-section">
+                  <h3 class="form-section-title">Security</h3>
+
+                  <div class="password-field-wrap">
+                    <input class="text-field w-input" type="password" id="password" name="password"
+                      placeholder="Password (min 6 characters) *" minlength="6" required>
+                    <button type="button" class="password-toggle-btn"
+                      onclick="togglePasswordVisibility('password')">Show</button>
+                  </div>
+
+                  <div class="password-field-wrap">
+                    <input class="text-field w-input" type="password" id="confirmPassword" name="confirmPassword"
+                      placeholder="Confirm Password *" minlength="6" required>
+                    <button type="button" class="password-toggle-btn"
+                      onclick="togglePasswordVisibility('confirmPassword')">Show</button>
+                  </div>
+                </div>
+
+                <div class="form-section">
+                  <h3 class="form-section-title">Institute Information</h3>
+
+                  <input class="text-field w-input" type="text" id="instituteName" name="instituteName"
+                    placeholder="Institute/School Name *" required>
+
+                  <div class="form-row">
+                    <input class="text-field w-input" type="text" id="instituteCity" name="instituteCity"
+                      placeholder="City (Optional)">
+
+                    <input class="text-field w-input" type="text" id="instituteState" name="instituteState"
+                      placeholder="State (Optional)">
+                  </div>
+
+                  <div id="boardClassSection"></div>
+
+                  <div class="info-note-yellow">
+                    💡 Your selected plan already includes the board and class shown above. Only Institute Name is
+                    mandatory for registration.
+                  </div>
+                </div>
+
+                <div class="form-section">
+                  <h3 class="form-section-title">Have a Coupon Code?</h3>
+                  <div class="coupon-section-box">
+                    <div id="couponInputSection">
+                      <div class="coupon-input-wrapper">
+                        <input class="text-field w-input" type="text" id="couponCode" name="couponCode"
+                          placeholder="Enter coupon code">
+                        <button type="button" id="applyCouponBtn" class="coupon-apply-btn"
+                          onclick="applyCoupon()">Apply</button>
+                      </div>
+                    </div>
+                    <div id="couponAppliedSection" style="display: none;"></div>
+                  </div>
+                </div>
+
+                <div class="terms-checkbox-wrap">
+                  <input type="checkbox" id="termsAccepted" name="termsAccepted" required>
+                  <label for="termsAccepted">
+                    I agree to the <a href="/terms-and-conditions.html" target="_blank" style="color: #1338be;">Terms
+                      and Conditions</a> and <a href="/privacy-policy.html" target="_blank"
+                      style="color: #1338be;">Privacy Policy</a>
+                  </label>
+                </div>
+
+                <div class="form-buttons-wrap">
+                  <button type="button" class="back-btn" onclick="goBackToPlans()">
+                    <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M9.707 16.707a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414l6-6a1 1 0 011.414 1.414L5.414 9H17a1 1 0 110 2H5.414l4.293 4.293a1 1 0 010 1.414z"
+                        clip-rule="evenodd" />
+                    </svg>
+                  </button>
+
+                  <div class="submit-btn-wrapper">
+                    <div id="priceDisplay" class="price-display" style="display: none;"></div>
+                    <button type="submit" id="submitBtn" class="cta secondary w-button" style="width: 100%; margin: 0;">
+                      <span id="submitBtnText">Create Free Account</span>
+                    </button>
+                    <div id="paymentSecurity" class="payment-security-text" style="display: none;">
+                      <svg width="16" height="16" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd"
+                          d="M2.166 4.999A11.954 11.954 0 0010 1.944 11.954 11.954 0 0017.834 5c.11.65.166 1.32.166 2.001 0 5.225-3.34 9.67-8 11.317C5.34 16.67 2 12.225 2 7c0-.682.057-1.35.166-2.001zm11.541 3.708a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
+                          clip-rule="evenodd" />
+                      </svg>
+                      <span>Secure payment powered by Razorpay</span>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <div id="w-node-ddd8e5e8-02ea-1927-c37f-f73854989465-544fd961" class="contact-card-wrap">
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <img src="/web-assets/scripts-and-styles/63bc1e3983475d58304fd9d6_Build%20Icon.svg" loading="lazy"
+                  alt="Secure Icon">
+              </div>
+              <div class="block">
+                <div class="contact-title">🔒 Secure Registration</div>
+                <p class="paragraph-small">Your information is encrypted and secure. We value your privacy and will
+                  never share your data with third parties.</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <img src="/web-assets/scripts-and-styles/63bc1e3983475d8ded4fd9d7_Mail%20Icon.svg" loading="lazy"
+                  alt="Access Icon">
+              </div>
+              <div class="block">
+                <div class="contact-title">⚡ Instant Access</div>
+                <p class="paragraph-small">Get immediate access to your courses and learning materials right after
+                  completing the registration.</p>
+              </div>
+            </div>
+
+            <div class="contact-card">
+              <div class="contact-card-icon">
+                <img src="/web-assets/scripts-and-styles/63bc1e3983475d69ac4fd9d5_Phone%20Icon.svg" loading="lazy"
+                  alt="Support Icon">
+              </div>
+              <div class="block">
+                <div class="contact-title">🎯 24/7 Support</div>
+                <p class="paragraph-small">Our dedicated support team is always available to help you with any questions
+                  or concerns.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="successSection" class="success-container" style="display: none;">
+        <div class="success-checkmark">
+          <svg fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+              clip-rule="evenodd" />
+          </svg>
+        </div>
+        <h2 style="font-size: 1.75rem; font-weight: 800; margin-bottom: 16px; color: #1F2937;">Welcome to GenZSkillz! 🎉
+        </h2>
+        <p style="color: #6B7280; margin-bottom: 32px; font-size: 1rem;">Your account has been created successfully.
+          Redirecting to your dashboard...</p>
+        <div class="loading-spinner-inline"></div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div data-w-id="5a56e052-7257-4202-2fd3-68c3078a0add" class="section footer">
+      <div class="main-container w-container">
+        <div class="w-layout-grid grid-footer">
+          <div id="w-node-_5a56e052-7257-4202-2fd3-68c3078a0ae0-078a0adc" class="footer-main"><a href="/"
+              class="footer-logo w-inline-block"><img src="/web-assets/scripts-and-styles/genskillz-logo1.png"
+                loading="lazy" alt="" class="footer-logo"></a>
+            <p class="text-medium">Empowering students through smart, AI-driven learning. A brand by GTR Education for
+              Excellence – inspiring a new era of education.</p>
+            <div class="footer-social-link-wrap">
+              <a href="https://facebook.com" class="social-link w-inline-block"><img
+                  src="/web-assets/scripts-and-styles/facebook-icon.png" loading="lazy" alt=""></a>
+              <a href="https://whatsapp.com" class="social-link w-inline-block"><img
+                  src="/web-assets/scripts-and-styles/whatsapp-icon.png" loading="lazy" alt=""></a>
+              <a href="https://instagram.com" class="social-link w-inline-block"><img
+                  src="/web-assets/scripts-and-styles/instagram-icon.png" loading="lazy" alt=""></a>
+            </div>
+
+          </div>
+          <div id="w-node-_5a56e052-7257-4202-2fd3-68c3078a0aee-078a0adc" class="footer-column">
+            <h3 class="footer-title">Pages</h3>
+            <div class="space-24"></div>
+            <div class="footer-grid">
+              <div class="footer-block"><a href="/" aria-current="page" class="footer-link w--current">Home</a>
+                <a href="/about-us.html" class="footer-link">About us</a>
+                <a href="features.html" class="footer-link">Features</a>
+                <!-- <a href="/pricing.html" class="footer-link">Pricing</a>
+                <a href="/blogs.html" class="footer-link">Blogs</a> -->
+                <a href="/contact-us.html" class="footer-link">Contact Us</a>
+              </div>
+              <div class="footer-block">
+                <!-- <a href="/pricing.html" class="footer-link">Sign up</a> -->
+                <a href="https://app.genzskillz.in/login" class="footer-link">Log in</a>
+                <a href="disclaimer.html" class="footer-link">Disclaimer</a>
+                <a href="privacy-policy.html" class="footer-link">Privacy Policy</a>
+                <a href="terms-and-conditions.html" class="footer-link">Terms and Conditions</a>
+                <a href="refund-and-cancellation-policy.html" class="footer-link">Refund & Cancellation Policy</a>
+              </div>
+            </div>
+          </div>
+          <div id="w-node-_5a56e052-7257-4202-2fd3-68c3078a0b0d-078a0adc" class="footer-contact">
+            <h3 class="footer-title">Contact us</h3>
+            <div class="space-24"></div>
+            <div class="contact-list">
+              <div class="contact-list-item">
+                <div class="contact-list-icon">
+                  <img src="/web-assets/scripts-and-styles/63bc1e3983475d028c4fd96e_mail.svg" loading="lazy" alt="">
+                </div>
+                <p class="paragraph-small">
+                  <a href="mailto:support@genzskillz.in" class="contact-link">support@genzskillz.in</a>
+                </p>
+              </div>
+
+              <!-- <div class="contact-list-item">
+                <div class="contact-list-icon">
+                  <img src="/web-assets/scripts-and-styles/63bc1e3983475d26354fd976_phone.svg" loading="lazy" alt="">
+                </div>
+                <p class="paragraph-small">
+                  <a href="tel:+919063938836" class="contact-link">+91 90639 38836</a>
+                </p>
+              </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section newsletter">
+      <div class="main-container w-container">
+        <div class="w-layout-grid grid-halves">
+          <div id="w-node-_5a56e052-7257-4202-2fd3-68c3078a0b24-078a0adc" class="block">
+            <h3 class="newsletter-title">Subscribe to our newsletter</h3>
+            <div class="newsletter-block">
+              <p>Join the <span class="span-newsletter">15,000+</span> students that uses GenZSkillz</p>
+            </div>
+          </div>
+          <div id="w-node-_5a56e052-7257-4202-2fd3-68c3078a0b2f-078a0adc" class="form-block w-form">
+            <form id="email-form" name="email-form" data-name="Email Form" method="get" class="newsletter-form">
+              <input class="newsletter-text-field w-input" maxlength="256" name="Email-2" placeholder="Email address"
+                type="email" id="Email-2">
+              <input type="submit" data-wait="Please wait..." class="cta subscribe w-button" value="Subscribe">
+            </form>
+            <div class="success-message w-form-done">
+              <div>Thank you! Your submission has been received!</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form.</div>
+            </div>
+          </div>
+        </div>
+        <div class="newsletter-divider"></div>
+        <div class="copyright-wrap">
+          <p>All Copyrights Reserved by <a href="/" target="_blank" class="white-link">GenZSkillz</a> inspired by GTR
+            Education for Excellence</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const API_URL = 'https://api.genzskillz.in/api';
+    let selectedPlan = null;
+    let appliedCoupon = null;
+    let finalPrice = 0;
+    let boardsData = {};
+    let classesData = {};
+
+    function showToast(message, type = 'success', title = '') {
+      let container = document.querySelector('.toast-container');
+      if (!container) {
+        container = document.createElement('div');
+        container.className = 'toast-container';
+        document.body.appendChild(container);
+      }
+
+      const toast = document.createElement('div');
+      toast.className = `toast ${type}`;
+
+      const iconSVG = type === 'error'
+        ? '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>'
+        : type === 'warning'
+          ? '<path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>'
+          : '<path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>';
+
+      const iconColor = type === 'error' ? '#DC2626' : type === 'warning' ? '#F59E0B' : '#10B981';
+
+      toast.innerHTML = `
+        <svg class="toast-icon" fill="${iconColor}" viewBox="0 0 20 20">${iconSVG}</svg>
+        <div class="toast-content">
+          ${title ? `<div class="toast-title">${title}</div>` : ''}
+          <div class="toast-message">${message}</div>
+        </div>
+        <button class="toast-close" onclick="this.parentElement.remove()">
+          <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"/>
+          </svg>
+        </button>
+      `;
+
+      container.appendChild(toast);
+
+      setTimeout(() => {
+        toast.classList.add('hiding');
+        setTimeout(() => toast.remove(), 300);
+      }, 5000);
+    }
+
+    function togglePasswordVisibility(fieldId) {
+      const field = document.getElementById(fieldId);
+      const button = field.nextElementSibling;
+
+      if (field.type === 'password') {
+        field.type = 'text';
+        button.textContent = 'Hide';
+      } else {
+        field.type = 'password';
+        button.textContent = 'Show';
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const planData = sessionStorage.getItem('selectedPlan');
+
+      if (!planData) {
+        showToast('No plan selected. Redirecting to plans page...', 'warning', 'Warning');
+        setTimeout(() => {
+          window.location.href = '/pricing.html';
+        }, 2000);
+        return;
+      }
+
+      selectedPlan = JSON.parse(planData);
+      finalPrice = selectedPlan.price;
+
+      renderPlanSummary();
+      fetchBoardsAndClasses();
+      setupFormSubmission();
+    });
+
+    function renderPlanSummary() {
+      const banner = document.getElementById('planSummaryBanner');
+
+      let durationText = '';
+      if (selectedPlan.durationType === 'endDate' && selectedPlan.endDate) {
+        const endDate = new Date(selectedPlan.endDate);
+        durationText = `Valid until ${endDate.toLocaleDateString('en-IN')}`;
+      } else {
+        durationText = `${selectedPlan.duration} ${selectedPlan.durationType}`;
+      }
+
+      banner.innerHTML = `
+        <div class="plan-summary-info">
+          <h3>Selected Plan: ${selectedPlan.name}</h3>
+          <p>₹${selectedPlan.price.toLocaleString('en-IN')} / ${durationText}</p>
+        </div>
+        <a class="change-plan-link" onclick="goBackToPlans()">Change Plan</a>
+      `;
+
+      updateSubmitButton();
+    }
+
+    function updateSubmitButton() {
+      const submitBtn = document.getElementById('submitBtn');
+      const submitBtnText = document.getElementById('submitBtnText');
+      const priceDisplay = document.getElementById('priceDisplay');
+      const paymentSecurity = document.getElementById('paymentSecurity');
+
+      const isFree = finalPrice === 0;
+
+      if (isFree) {
+        submitBtnText.textContent = 'Create Free Account';
+        priceDisplay.style.display = 'none';
+        paymentSecurity.style.display = 'none';
+      } else {
+        submitBtnText.textContent = 'Proceed to Payment';
+        priceDisplay.style.display = 'block';
+        paymentSecurity.style.display = 'flex';
+
+        if (appliedCoupon && appliedCoupon.discountAmount > 0) {
+          priceDisplay.innerHTML = `
+            <span class="original-price-text">₹${selectedPlan.price.toLocaleString('en-IN')}</span>
+            <span class="final-price-text">₹${finalPrice.toLocaleString('en-IN')}</span>
+          `;
+        } else {
+          priceDisplay.innerHTML = `
+            <span class="final-price-text">₹${finalPrice.toLocaleString('en-IN')}</span>
+          `;
+        }
+      }
+    }
+
+    async function fetchBoardsAndClasses() {
+      try {
+        const [boardsRes, classesRes] = await Promise.all([
+          fetch(`${API_URL}/public/boards`),
+          fetch(`${API_URL}/public/classes`)
+        ]);
+
+        const [boardsResult, classesResult] = await Promise.all([
+          boardsRes.json(),
+          classesRes.json()
+        ]);
+
+        if (boardsResult.success) {
+          boardsResult.data.forEach(board => {
+            boardsData[board._id] = board;
+          });
+        }
+
+        if (classesResult.success) {
+          classesResult.data.forEach(cls => {
+            classesData[cls._id] = cls;
+          });
+        }
+
+        renderBoardClassSection();
+      } catch (error) {
+        console.error('Error fetching boards/classes:', error);
+      }
+    }
+
+    function renderBoardClassSection() {
+      const section = document.getElementById('boardClassSection');
+
+      if (!selectedPlan.boards || selectedPlan.boards.length === 0) {
+        section.innerHTML = '';
+        return;
+      }
+
+      let html = '<div class="board-info-display" style="margin-top: 8px;">';
+      html += '<p><strong>📚 Your plan includes access to:</strong></p>';
+
+      selectedPlan.boards.forEach(boardConfig => {
+        const board = boardsData[boardConfig.boardId];
+        if (!board) return;
+
+        html += `<p style="margin-bottom: 8px;"><strong>Board:</strong> ${board.name}</p>`;
+
+        if (boardConfig.classes && boardConfig.classes.length > 0) {
+          const classNames = boardConfig.classes.map(classConfig => {
+            const classInfo = classesData[classConfig.classId];
+            return classInfo ? classInfo.name : '';
+          }).filter(name => name).join(', ');
+
+          if (classNames) {
+            html += `<p style="margin-bottom: 0;"><strong>Classes:</strong> ${classNames}</p>`;
+          }
+        }
+      });
+
+      html += '</div>';
+
+      section.innerHTML = html;
+    }
+
+    async function applyCoupon() {
+      const couponCode = document.getElementById('couponCode').value.trim();
+      const applyBtn = document.getElementById('applyCouponBtn');
+
+      if (!couponCode) {
+        showToast('Please enter a coupon code', 'warning', 'Validation Error');
+        return;
+      }
+
+      applyBtn.disabled = true;
+      applyBtn.textContent = 'Applying...';
+
+      try {
+        const response = await fetch(`${API_URL}/public/validate-coupon`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            code: couponCode,
+            planId: selectedPlan.id
+          })
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          appliedCoupon = data.data;
+          finalPrice = appliedCoupon.finalPrice;
+
+          document.getElementById('couponInputSection').style.display = 'none';
+          document.getElementById('couponAppliedSection').style.display = 'block';
+          document.getElementById('couponAppliedSection').innerHTML = `
+            <div class="coupon-success-box">
+              <div class="coupon-success-info">
+                <p>✨ Coupon "${couponCode}" applied!</p>
+                <small>You saved ₹${appliedCoupon.discountAmount.toLocaleString('en-IN')}</small>
+              </div>
+              <button class="remove-coupon-link" onclick="removeCoupon()">Remove</button>
+            </div>
+          `;
+
+          updateSubmitButton();
+          showToast(`Coupon applied! You saved ₹${appliedCoupon.discountAmount.toLocaleString('en-IN')}`, 'success', 'Success');
+        } else {
+          throw new Error(data.message || 'Invalid coupon code');
+        }
+      } catch (error) {
+        showToast(error.message, 'error', 'Coupon Error');
+        applyBtn.disabled = false;
+        applyBtn.textContent = 'Apply';
+      }
+    }
+
+    function removeCoupon() {
+      appliedCoupon = null;
+      finalPrice = selectedPlan.price;
+
+      document.getElementById('couponCode').value = '';
+      document.getElementById('couponInputSection').style.display = 'block';
+      document.getElementById('couponAppliedSection').style.display = 'none';
+
+      const applyBtn = document.getElementById('applyCouponBtn');
+      applyBtn.disabled = false;
+      applyBtn.textContent = 'Apply';
+
+      updateSubmitButton();
+      showToast('Coupon removed', 'warning', 'Coupon Removed');
+    }
+
+    function setupFormSubmission() {
+      const form = document.getElementById('registrationForm');
+      form.addEventListener('submit', async function (e) {
+        e.preventDefault();
+
+        if (!validateForm()) {
+          return;
+        }
+
+        if (finalPrice === 0) {
+          await handleFreeRegistration();
+        } else {
+          await handlePaidRegistration();
+        }
+      });
+    }
+
+    function validateForm() {
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const password = document.getElementById('password').value;
+      const confirmPassword = document.getElementById('confirmPassword').value;
+      const instituteName = document.getElementById('instituteName').value.trim();
+      const termsAccepted = document.getElementById('termsAccepted').checked;
+
+      if (!name) {
+        showToast('Please enter your name', 'error', 'Validation Error');
+        document.getElementById('name').focus();
+        return false;
+      }
+
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showToast('Please enter a valid email address', 'error', 'Validation Error');
+        document.getElementById('email').focus();
+        return false;
+      }
+
+      if (!phone || !/^\d{10}$/.test(phone)) {
+        showToast('Please enter a valid 10-digit phone number', 'error', 'Validation Error');
+        document.getElementById('phone').focus();
+        return false;
+      }
+
+      if (!password || password.length < 6) {
+        showToast('Password must be at least 6 characters long', 'error', 'Validation Error');
+        document.getElementById('password').focus();
+        return false;
+      }
+
+      if (password !== confirmPassword) {
+        showToast('Passwords do not match', 'error', 'Validation Error');
+        document.getElementById('confirmPassword').focus();
+        return false;
+      }
+
+      if (!instituteName) {
+        showToast('Please enter your institute/school name', 'error', 'Validation Error');
+        document.getElementById('instituteName').focus();
+        return false;
+      }
+
+      if (!termsAccepted) {
+        showToast('Please accept the terms and conditions to continue', 'error', 'Terms Required');
+        return false;
+      }
+
+      return true;
+    }
+
+    function calculateEndDate(plan) {
+      if (plan.durationType === 'endDate' && plan.endDate) {
+        return plan.endDate;
+      }
+
+      const date = new Date();
+      const duration = parseInt(plan.duration);
+
+      if (plan.durationType === 'days') {
+        date.setDate(date.getDate() + duration);
+      } else if (plan.durationType === 'months') {
+        date.setMonth(date.getMonth() + duration);
+      } else if (plan.durationType === 'years') {
+        date.setFullYear(date.getFullYear() + duration);
+      }
+
+      return date.toISOString();
+    }
+
+    async function handleFreeRegistration() {
+      const submitBtn = document.getElementById('submitBtn');
+      const originalText = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="loading-spinner-inline"></span> Creating Account...';
+
+      try {
+        let boardId = '';
+        let classId = '';
+        let subjects = [];
+
+        if (selectedPlan.boards && selectedPlan.boards.length > 0) {
+          boardId = selectedPlan.boards[0].boardId;
+          if (selectedPlan.boards[0].classes && selectedPlan.boards[0].classes.length > 0) {
+            classId = selectedPlan.boards[0].classes[0].classId;
+            subjects = selectedPlan.boards[0].classes[0].subjects || [];
+          }
+        }
+
+        const userData = {
+          name: document.getElementById('name').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          phone: document.getElementById('phone').value.trim(),
+          password: document.getElementById('password').value,
+          board: boardId,
+          class: classId,
+          instituteName: document.getElementById('instituteName').value.trim(),
+          instituteCity: document.getElementById('instituteCity').value.trim() || undefined,
+          instituteState: document.getElementById('instituteState').value.trim() || undefined,
+          role: 'student',
+          status: 'active',
+          subscription: {
+            planId: selectedPlan.id,
+            planName: selectedPlan.name,
+            status: 'active',
+            startDate: new Date().toISOString(),
+            endDate: calculateEndDate(selectedPlan),
+            duration: selectedPlan.durationType,
+            price: 0,
+            subjects: subjects
+          }
+        };
+
+        const response = await fetch(`${API_URL}/public/register`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(userData)
+        });
+
+        const data = await response.json();
+
+        if (data.success) {
+          showToast('Account created successfully! Redirecting...', 'success', 'Welcome!');
+
+          if (data.data && data.data.token) {
+            localStorage.setItem('authToken', data.data.token);
+          }
+
+          showSuccess();
+        } else {
+          throw new Error(data.message || 'Registration failed');
+        }
+      } catch (error) {
+        console.error('Registration error:', error);
+        showToast(error.message || 'Registration failed. Please try again.', 'error', 'Registration Error');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
+    }
+
+    async function handlePaidRegistration() {
+      const submitBtn = document.getElementById('submitBtn');
+      const originalText = submitBtn.innerHTML;
+
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="loading-spinner-inline"></span> Initiating Payment...';
+
+      try {
+        let boardId = '';
+        let classId = '';
+
+        if (selectedPlan.boards && selectedPlan.boards.length > 0) {
+          boardId = selectedPlan.boards[0].boardId;
+          if (selectedPlan.boards[0].classes && selectedPlan.boards[0].classes.length > 0) {
+            classId = selectedPlan.boards[0].classes[0].classId;
+          }
+        }
+
+        const userData = {
+          name: document.getElementById('name').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          phone: document.getElementById('phone').value.trim(),
+          password: document.getElementById('password').value,
+          board: boardId,
+          class: classId,
+          instituteName: document.getElementById('instituteName').value.trim(),
+          instituteCity: document.getElementById('instituteCity').value.trim() || undefined,
+          instituteState: document.getElementById('instituteState').value.trim() || undefined,
+          address: {
+            city: document.getElementById('instituteCity').value.trim() || undefined,
+            state: document.getElementById('instituteState').value.trim() || undefined
+          }
+        };
+
+        const orderResponse = await fetch(`${API_URL}/public/create-order`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            planId: selectedPlan.id,
+            amount: finalPrice,
+            userData: userData
+          })
+        });
+
+        const orderData = await orderResponse.json();
+
+        if (!orderData.success) {
+          throw new Error(orderData.message || 'Failed to create payment order');
+        }
+
+        const { orderId, amount, currency, tempUserId, planDetails } = orderData.data;
+        const razorpayKeyId = 'rzp_live_RdwkAYJHwF2EVd';
+
+        const options = {
+          key: razorpayKeyId,
+          amount: amount,
+          currency: currency,
+          name: 'GenZSkillz',
+          description: `${planDetails.name} Subscription`,
+          order_id: orderId,
+          prefill: {
+            name: userData.name,
+            email: userData.email,
+            contact: userData.phone
+          },
+          theme: {
+            color: '#1338be'
+          },
+          handler: async function (response) {
+            await verifyPaymentAndRegister(response, tempUserId, planDetails.id);
+          },
+          modal: {
+            ondismiss: function () {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = originalText;
+              showToast('Payment cancelled', 'warning', 'Payment Cancelled');
+            }
+          }
+        };
+
+        const razorpay = new window.Razorpay(options);
+        razorpay.open();
+
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      } catch (error) {
+        console.error('Payment error:', error);
+        showToast(error.message || 'Failed to initialize payment. Please try again.', 'error', 'Payment Error');
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalText;
+      }
+    }
+
+    async function verifyPaymentAndRegister(paymentResponse, tempUserId, planId) {
+      const submitBtn = document.getElementById('submitBtn');
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = '<span class="loading-spinner-inline"></span> Verifying Payment...';
+
+      try {
+        const verifyResponse = await fetch(`${API_URL}/public/verify-payment`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            paymentId: paymentResponse.razorpay_payment_id,
+            orderId: paymentResponse.razorpay_order_id,
+            signature: paymentResponse.razorpay_signature,
+            tempUserId: tempUserId,
+            planId: planId
+          })
+        });
+
+        const verifyData = await verifyResponse.json();
+
+        if (!verifyData.success) {
+          throw new Error(verifyData.message || 'Payment verification failed. Please contact support.');
+        }
+
+        showToast('Payment verified! Account activated successfully!', 'success', 'Welcome to GenZSkillz!');
+
+        if (verifyData.data.token) {
+          localStorage.setItem('authToken', verifyData.data.token);
+        }
+
+        showSuccess();
+      } catch (error) {
+        console.error('Payment verification error:', error);
+        showToast(error.message || 'Payment verification failed. Please contact support with your payment ID.', 'error', 'Verification Error');
+      }
+    }
+
+    function showSuccess() {
+      document.getElementById('registrationSection').style.display = 'none';
+      document.getElementById('successSection').style.display = 'block';
+
+      sessionStorage.removeItem('selectedPlan');
+
+      setTimeout(() => {
+        window.location.href = 'https://app.genzskillz.in';
+      }, 2000);
+    }
+
+    function goBackToPlans() {
+      window.location.href = '/pricing.html';
+    }
+  </script>
+</body>
+
+</html>
