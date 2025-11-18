@@ -37,7 +37,7 @@
             class="link-nav w-nav-link w--current">Home</a>
 
           <div class="dropdown">
-            <a href="/about-us.html" class="link-nav w-nav-link dropdown-toggle">About Us ↓</a>
+            <a href="/about-us.html" class="link-nav w-nav-link dropdown-toggle" id="aboutToggle">About Us ↓</a>
 
             <div class="dropdown-menu">
               <a href="/about-us.html#about-section" class="dropdown-item">About Us</a>
@@ -1014,18 +1014,29 @@
 
   <script src="/assets2/js/main-javascript.js" type="text/javascript" crossorigin="anonymous"></script>
   <script src="/web-assets/scripts-and-styles/js/gsap-animation.js" type="text/javascript"></script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const toggle = document.getElementById("coachingToggle");
-      const menu = document.querySelector(".dropdown-menu");
-
-      toggle.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        menu.classList.toggle("show");
-      });
+ <script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const coachingToggle = document.getElementById("coachingToggle");
+    const coachingMenu = coachingToggle.nextElementSibling; 
+    coachingToggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      coachingMenu.classList.toggle("show");
     });
-  </script>
+  });
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+    const aboutToggle = document.getElementById("aboutToggle");
+    const aboutMenu = aboutToggle.nextElementSibling; 
+
+    aboutToggle.addEventListener("click", (e) => {
+      e.preventDefault();
+      e.stopPropagation();
+      aboutMenu.classList.toggle("show");
+    });
+  });
+</script>
 
 
 </body>

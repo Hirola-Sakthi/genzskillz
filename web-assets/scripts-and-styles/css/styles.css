@@ -8734,6 +8734,21 @@ figure {
   z-index: 999;
 }
 
+@media(max-width:768px){
+  .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  min-width: 200px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  border-radius: 6px;
+  display: none;
+  flex-direction: column;
+  z-index: 999;
+  text-align: left;
+}
+}
 .dropdown-item {
   padding: 5px 16px;
   color: #000;
