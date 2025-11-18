@@ -27,8 +27,8 @@
 </head>
 
 <body>
-  <div class="section courses-section">
-     <div class="main-container w-container">
+  <div class="section courses-section coaching-section">
+    <div class="main-container w-container">
       <div data-w-id="374eea79-d4a1-dc65-a14b-7955076b7e97" style="opacity:0" class="title-wrap-center">
         <h1>Practice Papers & Mock Tests</h1>
         <div class="space-08"></div>
@@ -40,6 +40,10 @@
             improve strategically.</p>
         </div>
       </div>
+      <div class="responsive-image-container">
+        <img src="/web-assets/scripts-and-styles/practice-test-img.png" alt="Description of the image for GenZ Labs"
+          class="responsive-image">
+      </div>
       <div class="space-48"></div>
       <div data-w-id="f6287ac0-2730-95ba-5642-abd06b516eed" style="opacity:0" class="master-categories">
         <div id="w-node-cc7616d1-e501-a2f3-57f8-2524dcd68942-aeef03d7" class="list-wrap-courses w-dyn-list">
@@ -47,7 +51,7 @@
             <div role="listitem" class="w-dyn-item">
               <div class="ecommerce-course-card">
                 <div class="course-top-block">
-                   <div class="icon-wrapper">
+                  <div class="icon-wrapper">
                     <img src="/assets/icons/chapter-wise-practice-papers-icon.png" alt="icon" class="course-icon">
                   </div>
                   <div class="space-08"></div>
@@ -61,7 +65,7 @@
             <div role="listitem" class="w-dyn-item">
               <div class="ecommerce-course-card">
                 <div class="course-top-block">
-                   <div class="icon-wrapper">
+                  <div class="icon-wrapper">
                     <img src="/assets/icons/timed-mock-tests-icon.png" alt="icon" class="course-icon">
                   </div>
                   <div class="space-08"></div>
@@ -75,7 +79,7 @@
             <div role="listitem" class="w-dyn-item">
               <div class="ecommerce-course-card">
                 <div class="course-top-block">
-                   <div class="icon-wrapper">
+                  <div class="icon-wrapper">
                     <img src="/assets/icons/performance-analytics-icon.png" alt="icon" class="course-icon">
                   </div>
                   <div class="space-08"></div>
@@ -89,7 +93,7 @@
             <div role="listitem" class="w-dyn-item">
               <div class="ecommerce-course-card">
                 <div class="course-top-block">
-                   <div class="icon-wrapper">
+                  <div class="icon-wrapper">
                     <img src="/assets/icons/ai-powered-doubt-solver-icon.png" alt="icon" class="course-icon">
                   </div>
                   <div class="space-08"></div>
@@ -103,7 +107,7 @@
             <div role="listitem" class="w-dyn-item">
               <div class="ecommerce-course-card">
                 <div class="course-top-block">
-                   <div class="icon-wrapper">
+                  <div class="icon-wrapper">
                     <img src="/assets/icons/adaptive-difficulty-levels-icon.png" alt="icon" class="course-icon">
                   </div>
                   <div class="space-08"></div>
@@ -117,7 +121,7 @@
             <div role="listitem" class="w-dyn-item">
               <div class="ecommerce-course-card">
                 <div class="course-top-block">
-                   <div class="icon-wrapper">
+                  <div class="icon-wrapper">
                     <img src="/assets/icons/all-subjects-covered-icon.png" alt="icon" class="course-icon">
                   </div>
                   <div class="space-08"></div>
@@ -134,9 +138,9 @@
     </div>
   </div>
   <div class="cta-center-wrap">
-        <a href="/pricing.html" class="cta-gradient-btn">Enroll Now</a>
-    </div>
-  <div class="section">
+    <a href="/pricing.html" class="cta-gradient-btn">Enroll Now</a>
+  </div>
+  <div class="coaching-section">
     <div class="main-container w-container">
       <div data-w-id="5b9a7a15-60d6-cd88-c815-7414a229fa96" class="title-wrap-center">
         <h2>Frequently Asked Questions (FAQs)</h2>
@@ -230,7 +234,7 @@
 
           </div>
           <div id="w-node-_5a56e052-7257-4202-2fd3-68c3078a0aee-078a0adc" class="footer-column">
-            <h3 class="footer-title">Pages</h3>
+            <h3 class="footer-title">Quick Links</h3>
             <div class="space-24"></div>
             <div class="footer-grid">
               <div class="footer-block"><a href="/" aria-current="page" class="footer-link w--current">Home</a>
@@ -328,9 +332,17 @@
             class="brand-image-navbar"></a></div>
       <div class="right-navbar">
         <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" class="link-nav w-nav-link">Home</a>
-          <a href="/about-us.html" class="link-nav w-nav-link">About Us</a>
           <div class="dropdown">
-                  <a href="#" class="link-nav w-nav-link dropdown-toggle" id="coachingToggle">Coaching ↓</a>
+            <a href="/about-us.html" class="link-nav w-nav-link dropdown-toggle">About Us ↓</a>
+
+            <div class="dropdown-menu">
+              <a href="/about-us.html#about-section" class="dropdown-item">About Us</a>
+              <a href="/about-us.html#mission-section" class="dropdown-item">Mission & Vision</a>
+              <a href="/about-us.html#how-section" class="dropdown-item">How it Works</a>
+            </div>
+          </div>
+          <div class="dropdown">
+            <a href="#" class="link-nav w-nav-link dropdown-toggle" id="coachingToggle">Coaching ↓</a>
             <div class="dropdown-menu">
               <a href="/cbsc-and-state-boards.html" class="dropdown-item">CBSE & State Boards</a>
               <!-- <a href="#" class="dropdown-item">State Board</a>
@@ -372,17 +384,17 @@
   <script src="/assets2/js/main-javascript.js" type="text/javascript" crossorigin="anonymous"></script>
   <script src="/web-assets/scripts-and-styles/js/gsap-animation.js" type="text/javascript"></script>
   <script>
-document.addEventListener("DOMContentLoaded", () => {
-  const toggle = document.getElementById("coachingToggle");
-  const menu = document.querySelector(".dropdown-menu");
+    document.addEventListener("DOMContentLoaded", () => {
+      const toggle = document.getElementById("coachingToggle");
+      const menu = document.querySelector(".dropdown-menu");
 
-  toggle.addEventListener("click", (e) => {
-    e.preventDefault();
-    e.stopPropagation();
-    menu.classList.toggle("show");
-  });
-});
-</script>
+      toggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        menu.classList.toggle("show");
+      });
+    });
+  </script>
 </body>
 
 </html>

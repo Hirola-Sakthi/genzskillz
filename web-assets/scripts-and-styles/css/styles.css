@@ -3545,6 +3545,11 @@ figure {
   padding-bottom: 80px;
 }
 
+.coaching-section {
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
 .section.hero-home {
   padding-top: 100px;
   padding-bottom: 32px;
@@ -3814,6 +3819,7 @@ figure {
   font-size: 52px;
   font-weight: 600;
   margin-top: 50px;
+  line-height: 55px;
 }
 
 .paragraph-big {
@@ -4410,7 +4416,7 @@ figure {
   border-radius: 18px;
   width: 100%;
   max-width: 593px;
-  min-height: 718px;
+  /* min-height: 718px; */
   overflow: hidden;
 }
 
@@ -6154,7 +6160,7 @@ figure {
   border-radius: 12px;
   justify-content: center;
   height: 48px;
-  padding: 12px 24px;
+  padding: 12px 12px;
   font-size: 16px;
   text-decoration: none;
   transition: background-color 0.2s;
@@ -6562,7 +6568,7 @@ figure {
   grid-column-gap: 8px;
   justify-content: flex-end;
   display: flex;
-  margin-right: -100px;
+  margin-right: -125px;
 }
 @media (max-width: 1024px) {
   .wrap-nav-buttons {
@@ -6856,7 +6862,7 @@ figure {
   }
 
   .feature-image-wrap {
-    max-width: 510px;
+    /* max-width: 510px; */
     min-height: 580px;
   }
 
@@ -7506,7 +7512,7 @@ figure {
   }
 
   .feature-image-wrap {
-    height: 120vw;
+    /* height: 120vw; */
     max-height: 610px;
   }
 
@@ -8729,7 +8735,7 @@ figure {
 }
 
 .dropdown-item {
-  padding: 10px 16px;
+  padding: 5px 16px;
   color: #000;
   font-size: 15px;
   text-decoration: none;
@@ -8805,3 +8811,28 @@ figure {
   opacity: 0.9;
   transform: translateY(-2px);
 }
+
+
+.responsive-image-container {
+  margin: 20px auto; 
+  max-width: 1000px;
+  margin-top: 50px; 
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  display: block; 
+}
+
+
+
+/* @media(max-width:540px){
+  .colored-block img{
+      object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+} */
+
+
