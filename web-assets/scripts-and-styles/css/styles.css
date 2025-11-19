@@ -8851,3 +8851,6 @@ figure {
 } */
 
 
+.footer-column h3.footer-title.quick-links {
+  margin-left:-5px !important;
+}
