@@ -8764,6 +8764,7 @@ figure {
   font-size: 15px;
   text-decoration: none;
   display: block;
+  text-align: left;
 }
 
 .dropdown-item:hover {
