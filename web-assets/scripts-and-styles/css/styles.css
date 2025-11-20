@@ -3959,7 +3959,7 @@ figure {
   display: flex;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .cta.secondary {
     background-color: var(--green);
     color: #fff;
@@ -3993,7 +3993,7 @@ figure {
   display: flex;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .cta-btn.secondary-btn {
     background-color: var(--green);
     color: #fff;
@@ -4030,7 +4030,7 @@ figure {
   font-weight: 600;
   display: flex;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1280px) {
   .cta.secondary.nav-cta {
     height: 48px;
     min-height: 0;
@@ -5626,6 +5626,14 @@ figure {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
+@media (min-width: 991px) and (max-width: 1085px) {
+  .grid-footer {
+    grid-column-gap: 30px;
+    grid-row-gap: 72px;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
 
 .footer-main {
   grid-column-gap: 16px;
@@ -6081,13 +6089,13 @@ figure {
   width: 100%;
   max-width: 1320px;
   height: 100%;
-  margin-left: 15px;
-  /* margin-right: auto;
-  padding-left: 20px; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
   padding-right: 20px;
   display: flex;
 }
-@media (max-width: 1024px) {
+@media (max-width: 1440px) {
   .navbar-container {
     justify-content: space-between;
     align-items: center;
@@ -6165,6 +6173,7 @@ figure {
   text-decoration: none;
   transition: background-color 0.2s;
   display: flex;
+  white-space: nowrap;
 }
 @media (max-width: 1024px) {
   .link-login {
@@ -6568,7 +6577,7 @@ figure {
   grid-column-gap: 8px;
   justify-content: flex-end;
   display: flex;
-  margin-right: -125px;
+  margin-right: 0px;
 }
 @media (max-width: 1024px) {
   .wrap-nav-buttons {
@@ -7664,7 +7673,7 @@ figure {
   }
 
   .footer-link {
-    font-size: 18px;
+    font-size: 17px;
   }
 
   .footer-contact {
@@ -8854,3 +8863,14 @@ figure {
 .footer-column h3.footer-title.quick-links {
   margin-left:-5px !important;
 }
+
+@media screen and (max-width: 768px) {
+  #w-node-_5a56e052-7257-4202-2fd3-68c3078a0b0d-078a0adc {
+    grid-column: span 1 / span 1 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+ .grid-footer {
+    grid-template-columns: 1fr !important;
+  }
+  }

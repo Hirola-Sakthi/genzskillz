@@ -52,14 +52,22 @@
                             <a href="/jee-and-neet-preparation.html" class="dropdown-item">JEE & NEET Preparation</a>
                         </div>
                     </div>
+                              <div class="dropdown">
+            <a href="#" class="link-nav w-nav-link dropdown-toggle" id="whychooseToggle">Why Choose Genzskills ↓</a>
+            <div class="dropdown-menu">
+              <a href="/practice-paper.html" class="dropdown-item">Practice Papers</a>
+              <a href="/ai-learning.html" class="dropdown-item">AI Learing</a>
+              <a href="/genz-labs.html" class="dropdown-item">Genz Labs</a>
+            </div>
+          </div>
                     <!-- <a href="/features.html" class="link-nav w-nav-link">Features</a> -->
                     <!-- <a href="#" class="footer-link">CBSC & State Board</a>
                   <a href="#" class="footer-link">JEE & NEET</a> -->
-                    <a href="/practice-paper.html" class="link-nav w-nav-link">Practice Papers</a>
-                    <a href="/ai-learning.html" class="link-nav w-nav-link">AI Learing</a>
+                    <!-- <a href="/practice-paper.html" class="link-nav w-nav-link">Practice Papers</a>
+                    <a href="/ai-learning.html" class="link-nav w-nav-link">AI Learing</a> -->
                     <a href="/for-students.html" class="link-nav w-nav-link">For Students</a>
                     <a href="/for-institutions.html" class="link-nav w-nav-link">For Institutions</a>
-                    <a href="/genz-labs.html" class="link-nav w-nav-link">Genz Labs</a>
+                    <!-- <a href="/genz-labs.html" class="link-nav w-nav-link">Genz Labs</a> -->
                     <!-- <a href="/features.html" class="link-nav w-nav-link">Features</a> -->
                     <!-- <a href="/teachers.html"
                         class="link-nav w-nav-link">Teachers</a> -->
@@ -373,6 +381,19 @@
     });
   });
 </script>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+      const aboutToggle = document.getElementById("whychooseToggle");
+      const aboutMenu = aboutToggle.nextElementSibling;
+
+      aboutToggle.addEventListener("click", (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        aboutMenu.classList.toggle("show");
+      });
+    });
+  </script>
+
 </body>
 
 </html>
