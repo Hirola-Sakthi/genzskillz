@@ -35,16 +35,7 @@
                         class="brand-image-navbar"></a></div>
             <div class="right-navbar">
                 <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" class="link-nav w-nav-link">Home</a>
-                    <div class="dropdown">
-                        <a href="/about-us.html" class="link-nav w-nav-link dropdown-toggle" id="aboutToggle">About Us
-                            ↓</a>
-
-                        <div class="dropdown-menu">
-                            <a href="/about-us.html#about-section" class="dropdown-item">About Us</a>
-                            <a href="/about-us.html#mission-section" class="dropdown-item">Mission & Vision</a>
-                            <a href="/about-us.html#how-section" class="dropdown-item">How it Works</a>
-                        </div>
-                    </div>
+                    <a href="/about-us.html" class="link-nav w-nav-link">About Us</a>
                     <div class="dropdown">
                         <a href="#" class="link-nav w-nav-link dropdown-toggle" id="coachingToggle">Coaching ↓</a>
                         <div class="dropdown-menu">
@@ -321,18 +312,6 @@
                 e.preventDefault();
                 e.stopPropagation();
                 coachingMenu.classList.toggle("show");
-            });
-        });
-    </script>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const aboutToggle = document.getElementById("aboutToggle");
-            const aboutMenu = aboutToggle.nextElementSibling;
-
-            aboutToggle.addEventListener("click", (e) => {
-                e.preventDefault();
-                e.stopPropagation();
-                aboutMenu.classList.toggle("show");
             });
         });
     </script>

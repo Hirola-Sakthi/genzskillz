@@ -35,16 +35,8 @@
       <div class="right-navbar">
         <nav role="navigation" class="nav-menu w-nav-menu"><a href="/" aria-current="page"
             class="link-nav w-nav-link w--current">Home</a>
+          <a href="/about-us.html" class="link-nav w-nav-link">About Us</a>
 
-          <div class="dropdown">
-            <a href="/about-us.html" class="link-nav w-nav-link dropdown-toggle" id="aboutToggle">About Us ↓</a>
-
-            <div class="dropdown-menu">
-              <a href="/about-us.html#about-section" class="dropdown-item">About Us</a>
-              <a href="/about-us.html#mission-section" class="dropdown-item">Mission & Vision</a>
-              <a href="/about-us.html#how-section" class="dropdown-item">How it Works</a>
-            </div>
-          </div>
           <div class="dropdown">
             <a href="#" class="link-nav w-nav-link dropdown-toggle" id="coachingToggle">Coaching ↓</a>
             <div class="dropdown-menu">
@@ -131,7 +123,7 @@
           <h2 class="one-platform">One Platform. Unlimited Learning</h2>
           <div class="space-16"></div>
           <p class="text-medium">Powered by AI. Designed for Gen-Z minds.</p>
-          <p class="text-medium">Built to make studying feel less “boring syllabus” and more level-up mode.</p>
+          <p class="text-medium">Built to make studying feel less “boring” and more level-up mode.</p>
           <div class="check-list-wrap">
             <div class="check-list-item">
               <div class="check-list-icon"><img src="/web-assets/scripts-and-styles/check-line.png" loading="lazy"
@@ -158,11 +150,11 @@
               <p>Improve faster, without wasting time</p>
             </div>
           </div></br>
+          <p class="text-medium">Learn. Practice. Improve. Repeat.</p>
+          <p class="text-medium">Results aren’t luck — they’re a smart habit.</p>
           <p class="text-medium">GenZSkillz isn’t just another study app —
             It’s your AI study partner that evaluates you, corrects you, guides you, and pushes you to the next level.
           </p>
-          <p class="text-medium">Learn. Practice. Improve. Repeat.</p>
-          <p class="text-medium">Results aren’t luck — they’re a smart habit.</p>
         </div>
         <div id="w-node-_6c11fe8d-765c-e360-7049-6c34bfd8b4f5-c24fd956" class="colored-block">
           <div id="w-node-_6c11fe8d-765c-e360-7049-6c34bfd8b4f6-c24fd956" class="home-image-wrap "><img
@@ -1027,18 +1019,6 @@
         e.preventDefault();
         e.stopPropagation();
         coachingMenu.classList.toggle("show");
-      });
-    });
-  </script>
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-      const aboutToggle = document.getElementById("aboutToggle");
-      const aboutMenu = aboutToggle.nextElementSibling;
-
-      aboutToggle.addEventListener("click", (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        aboutMenu.classList.toggle("show");
       });
     });
   </script>

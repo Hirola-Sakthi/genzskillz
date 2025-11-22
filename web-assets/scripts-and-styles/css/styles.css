@@ -6584,7 +6584,7 @@ figure {
     grid-column-gap: 8px;
     justify-content: flex-end;
     display: flex;
-    margin-right: 0px;
+    margin-right: 10px;
   }
 }
 .cta-wrap-sales-hero {
